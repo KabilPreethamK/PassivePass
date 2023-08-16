@@ -1,0 +1,16 @@
+{
+      "Words": {
+            "Target": [
+                  "kamal",
+                  "brinda"
+            ]
+      },
+      "Integers": {
+            "dob": [
+                  "6007"
+            ],
+            "phn": [
+                  "900"
+            ]
+      }
+}
