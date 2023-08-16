@@ -25,7 +25,7 @@ def inbuilt(x,y):
                         combination = word + dob_value
                         combinations.append(combination)
 
-            with open('inbuilt.txt', 'w') as file:
+            with open(y+".txt", 'w') as file:
                 for combination in combinations:
                     file.write(combination + '\n')
             #integer + word
@@ -38,7 +38,7 @@ def inbuilt(x,y):
                         combination = dob_value + word
                         combinations.append(combination)
 
-            with open('inbuilt.txt', 'a') as file:
+            with open(y+".txt", 'a') as file:
                 for combination in combinations:
                     file.write(combination + '\n')
 
@@ -53,7 +53,7 @@ def inbuilt(x,y):
                             combination = word+special_characters[i] + dob_value
                             combinations.append(combination)
 
-            with open('inbuilt.txt', 'a') as file:
+            with open(y+".txt", 'a') as file:
                 for combination in combinations:
                     file.write(combination + '\n')
 
@@ -68,7 +68,7 @@ def inbuilt(x,y):
                             combination = dob_value+special_characters[i] + word
                             combinations.append(combination)
                             
-            with open('inbuilt.txt', 'a') as file:
+            with open(y+".txt", 'a') as file:
                 for combination in combinations:
                     file.write(combination + '\n')
 
@@ -86,7 +86,7 @@ def inbuilt(x,y):
                                 combination = word[:i] + special_characters[j]  + word[i:] + dob_value
                                 combinations.append(combination)
                             
-            with open('inbuilt.txt', 'a') as file:
+            with open(y+".txt", 'a') as file:
                 for combination in combinations:
                     file.write(combination + '\n')
 
@@ -100,7 +100,7 @@ def inbuilt(x,y):
                                 combination = word + dob_value[:i]+special_characters[j]  + dob_value[i:]
                                 combinations.append(combination)
                             
-            with open('inbuilt.txt', 'a') as file:
+            with open(y+".txt", 'a') as file:
                 for combination in combinations:
                     file.write(combination + '\n')
 
@@ -127,11 +127,6 @@ def inbuilt(x,y):
         with open(y+"capital.txt", 'w') as file:
             for word in filtered_words:
                 file.write(word + '\n')
-        try:
-            import os
-            os.system("inbuilt.txt")
-        except:
-            pass
 
         return filtered_words
     
